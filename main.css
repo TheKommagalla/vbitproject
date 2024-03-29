@@ -1,0 +1,454 @@
+body{
+    margin: auto;
+    overflow-x: hidden;
+    height:auto;
+   
+    
+  
+}
+header
+{
+    background-color:maroon;
+    width: 100%;
+    height: 50px;
+}
+#vbit
+{ 
+    color: aqua;
+    text-align: left;
+    
+  
+    font-style: oblique;
+    letter-spacing: 3px;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+/*
+#vbit
+{
+    position: relative;
+}
+#vbit::after{
+    content:"|";
+    color: white;
+    position: absolute;
+    right: 1;
+    width: 100%;
+    animation: type 10s infinite,line 9s infinite;
+    
+    background-color: maroon;
+}
+@keyframes type {
+
+     to{
+        width:0%;
+     }
+}
+@keyframes line{
+
+    100%{
+          opacity:0;
+          
+    }
+}*/
+
+#navigation
+{
+    width:100%;
+    height:50px;
+    background-color:rgb(194, 220, 20);
+}
+#inputbars {
+    display: flex; /* display the icon and the input in a line */
+}
+  #inputbars > i {
+    min-width: 40px; /* set a minimum width for the icon */
+    padding: 10px; /* make sure the icon is centered vertically */
+    text-align: center; /* horizontally center the icon */
+    background: lightgrey;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: .2%;
+
+  }
+  /* style the input */
+   input {
+    outline: none;
+    border: none;
+    padding: 10px;
+    min-width: 20%;
+    margin-top: .2%;
+    border: 1px solid lightgrey;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+  }
+  button{
+    
+    width: 30%;
+    margin-left:0.5%;
+    margin-right: 1%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: .2%;
+    
+
+  }
+
+
+#image             /*back ground image*/
+{
+    width: 100%;
+    height: 600px;
+    opacity: 0.6;
+    background-color: white;
+   
+    position: absolute;
+    background-image: url("images/libpic.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 600px;
+ 
+}
+
+ #searchheading     /*heaading of the find the best book*/
+{
+    color:black;
+    text-align: center;
+    margin-top:9%;
+    margin-right:9%;
+    margin-left:9%;
+    margin-bottom:1%;
+    font-style: oblique;
+    font-size: xx-large;
+}
+
+.search             /*class for div */
+{   width: 50%;
+    height: 60px;
+    margin-top:2%;
+    margin-bottom:20%;
+    margin-left: 24%;
+    margin-right: 28%;
+   
+}
+select          /*selector tag*/
+{
+    width:25% ;
+    height:60px;
+    text-align: center;
+} 
+
+#bestbooks/*best books*/
+{      
+    width: 80%;
+    margin-left: 10%;
+    height: 600px;
+    position:relative;
+    top:600px;
+
+    background-image: url("vbit/be1stbook.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%  600px;
+}
+#headingofbooks
+{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: black;
+    margin: 0%;
+    padding: 0%;
+    margin-left: 2%;
+
+}
+#bigcontainer
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+#container
+{
+  width:30%;
+  height:150px;
+  margin-top: 100px;
+  margin-left: 2%;
+  border: 2px solid rgb(173, 162, 162);
+  box-shadow: 19px 20px 10px rgb(23, 67,45);
+  display: flex;
+ 
+ 
+}
+#container:hover
+
+{
+    transform: scale(0.8);
+}
+#container1
+{   width:57%;
+    height: 150px;
+    border: 1px solid red;
+}
+
+#container2
+{
+    width:43%;
+}
+.image img
+{
+    width: 100%;
+    height: 100%;
+    
+}
+ p{
+    margin-left: 4%;
+
+}
+p:nth-child(1)
+{
+    font-weight: bolder;
+}
+footer
+{
+
+    width: 100%;
+    position:relative;
+    top: 600px;
+    margin: 0%;
+    padding: 0%;
+    background-color:black;
+}
+footer h4
+{
+    color: turquoise;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+}
+ul{
+    list-style-type: none;
+    color:white;
+
+}
+.footerend
+{
+    width: 33%;
+    text-align: center;
+    display: inline-block;
+}
+.footerend> a:hover
+{
+    color:rgb(255, 255, 255) ;
+}
+/* 0- 1600*/
+@media screen and (max-width:1600px)
+{
+    body
+    {
+       background-color: rgb(144, 198, 118);
+    }
+    
+}
+
+/* 0- 1400*/
+
+@media screen and (max-width:1400px)
+{
+    body
+    {
+       background-color: rgb(150, 190, 136);
+    }
+    
+}
+/* 0- 1200*/
+
+@media screen and (max-width:1200px)
+{
+    body{
+        background-color: rgb(190, 223, 182);
+    }
+    
+}/* 0- 1000*/
+
+@media screen and (max-width:1000px)
+{
+    body
+    {
+          background-color: rgb(65, 190, 136);
+    }
+    #container
+    {
+        width:55%;
+
+    }
+    #container{
+        margin-left: 23%;
+    }
+    footer{
+        top:1600px;
+
+    }
+    
+}/* 0- 800*/
+  
+@media screen and (max-width:800px)
+{
+    body{
+         background-color: rgb(207, 143, 41);
+        }
+        #container
+        {
+            width:60%;
+    
+        }
+        .footerend
+        {
+            width: 30%;
+            top: 600px;
+        }
+        footer{
+           top: 1600px;
+
+    }
+    #container{
+        margin-left: 21%;
+    }
+
+
+    
+}
+/* 0- 750*/
+
+@media screen and (max-width:750px)
+{
+    body{
+        background-color: rgb(122, 154, 214);
+    }
+    #container{
+        margin-left: 21%;
+    }
+}
+/* 0- 700*/
+
+@media screen and (max-width:700px)
+{
+    body
+    {
+        background-color: rgb(30, 188, 216);
+    }
+    #vbit
+{ 
+    color: aqua;
+    text-align: center;
+    font-style: oblique;
+    letter-spacing: 0px;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+.footerend
+{
+    width: 25%;
+    text-align: center;
+    display: inline-block;
+}
+#container{
+    margin-left: 20%;
+}
+}
+/*0- 640px*/
+@media screen and (max-width:640px)
+{
+    body
+    {
+        background-color: rgb(117, 135, 200);
+    }
+    #vbit
+{ 
+    color: aqua;
+    text-align: center;
+    font-size: x-large;
+    font-style: oblique;
+    letter-spacing: 1px;
+    padding-top: 2%;
+    padding-bottom: 0.5%;
+}
+.footerend
+{
+    width: 30%;
+    text-align: center;
+    display: inline-block
+}
+#container{
+    margin-left: 20%;
+}
+}
+/* 0- 480*/
+
+@media screen and (max-width:480px)
+{
+    body{
+        background-color: rgb(223, 220, 197);
+    }
+    #container
+    {
+        width:90%;
+        
+
+    }
+    #vbit
+{ 
+    color: aqua;
+    text-align: center;
+    font-size:20px;
+    font-style: oblique;
+    letter-spacing: 1px;
+    padding-top: 3%;
+    padding-bottom: 0.5%;
+}
+#inputbars > i {
+    min-width: 20px; /* set a minimum width for the icon */
+    padding: 10px; /* make sure the icon is centered vertically */
+    text-align: center; /* horizontally center the icon */
+    background: lightgrey;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: .2%;
+
+  }
+ 
+
+}
+/*0-320*/
+@media screen and (max-width:320px)
+{
+    body{
+        background-color: rgb(27, 148, 175);
+    }
+    #container
+    {
+        width:100%;
+        
+
+    }
+    #vbit
+{ 
+    color: aqua;
+    text-align: center;
+    font-size:15px;
+    font-style: oblique;
+    letter-spacing: 1px;
+    padding-top: 4%;
+    padding-bottom: 0.5%;
+}
+#inputbars > i {
+    min-width: 10px; /* set a minimum width for the icon */
+    padding: 10px; /* make sure the icon is centered vertically */
+    text-align: center; /* horizontally center the icon */
+    background: lightgrey;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: .2%;
+
+  }
+}
